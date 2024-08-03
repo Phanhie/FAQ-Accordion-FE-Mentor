@@ -1,0 +1,135 @@
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    margin: 0;
+    padding:0;
+    width: 100%;
+    min-height: 120%;
+    background-color: white;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.Bg-Pattern{
+    width: 100%;
+    max-height: auto;
+    height: 250px;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    margin: 0;
+    position: relative;
+}
+
+.main-container{
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px hsl(292, 16%, 49%);
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    left: 320px;
+}
+
+.Header{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+hr{
+    opacity: 0.3;
+}
+.Header h1{
+    margin: 0;
+}
+
+.Question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plus {
+    margin-left: 10%;
+    right: 50px;
+    cursor: pointer;
+}
+
+.plus:hover {
+    filter: brightness(75%);
+}
+
+.plus:focus-visible {
+    filter: brightness(75%);
+    outline: 2px solid black;
+}
+
+.plus:active {
+    filter: brightness(50%);
+}
+
+.minus {
+    display: none;
+    margin-left: 10%;
+    right: 50px;
+    cursor: pointer;
+}
+
+.minus:hover {
+    filter: brightness(300%);
+}
+
+input.minus:focus-visible {
+    filter: brightness(300%);
+    outline: 2px solid black;
+}
+
+.minus:active {
+    filter: brightness(200%);
+}
+
+p{
+    display: none;
+    font-size: 16px;
+    margin: 0;
+}
+h4:hover{
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+    filter: brightness(300%);
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 400px) {
+    .Bg-Pattern{
+        height: 250px;
+    }
+    
+    .main-container h1{
+        margin: 0;
+    }
+    
+    .main-container{
+        top: 100px;
+        left: 20px;
+        width: 80%
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    .Header{
+        font-size: 20px;
+    }
+  }
+
+
+ 
